@@ -1,0 +1,60 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    min-height: 600px; /* Use min-height for better responsiveness */
+    background-image: url('3.jpg'); /* Add your image path here */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text for better visibility */
+    overflow: hidden; /* Hide overflow to create a sliding effect */
+    width: 100%;
+    background-color: #f0f0f0; 
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+/* Hero heading styling */
+.hero h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255); /* Semi-transparent background for text */
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.bg-orange-custom {
+    background-color: #fd7e14;
+}
